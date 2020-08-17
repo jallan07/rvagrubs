@@ -1,27 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 0;
 }
 
-section {
-    padding: 100px;
-    display: flex;
-    justify-content: flex-start;
-    min-height: 100vh;
+.hero {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.1)), url(images/pizza-bg.jpg);
+    background-position: center;
+    background-size: cover;
     position: relative;
 }
 
-section .logo {
+.nav-bar {
     position: fixed;
-    top: 30px;
-    color: darkslategray;   
+    top: 0;
+    display: flex;
+    padding: 5px 50px;
+    width: 100vw;
+    justify-content: center;
+}
+
+.nav-bar ul li {
+    display: inline-block;
+    position: relative;
+    padding: 35px 15px 0 15px;
+    text-decoration: none;
     font-weight: 700;
-    font-size: 2em;
-    z-index: 100%;
-    cursor: pointer;
-    background-color: #fff;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.nav-logo img {
+    width: 90px;
+}
+
+.nav-bar .nav-btn {
+    position: relative;
+    margin: 0 auto;
+}
+
+.nav-bar .nav-btn a { 
+    display: inline-block;
+    position: relative;
+    justify-content: right;
+    padding: 35px 15px 0 15px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.75);
 }
