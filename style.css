@@ -18,14 +18,14 @@
     top: 0;
     display: flex;
     padding: 5px 50px;
-    width: 100vw;
+    width: 85%;
     justify-content: center;
 }
 
 .nav-bar ul li {
     display: inline-block;
     position: relative;
-    padding: 35px 15px 0 15px;
+    padding: 35px 25px 0 25px;
     text-decoration: none;
     font-weight: 700;
     font-size: 18px;
