@@ -44,10 +44,18 @@
 .nav-bar .nav-btn a { 
     display: inline-block;
     position: relative;
-    justify-content: right;
-    padding: 35px 15px 0 15px;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 10px 20px;
     text-decoration: none;
     font-weight: 700;
     font-size: 18px;
     color: rgba(255, 255, 255, 0.75);
+    background: #ae1f23;
+    border-radius: 3px;
+}
+
+.nav-bar .nav-btn a i {
+    font-size: 25px;
+    padding-left: 10px;
 }
