@@ -5,46 +5,30 @@
     margin: 0 0;
 }
 
-.hero {
-    height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.1)), url(images/pizza-bg.jpg);
-    background-position: center;
-    background-size: cover;
-    position: relative;
-}
-
-.nav-bar {
+header {
     position: fixed;
-    top: 0;
-    display: flex;
-    padding: 5px 50px;
-    width: 85%;
-    justify-content: center;
+    /* border: solid yellow; */
+    width: 100%;
+    top: 2%;
 }
 
-.nav-bar ul li {
-    display: inline-block;
-    position: relative;
-    padding: 35px 25px 0 25px;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 18px;
-    color: rgba(255, 255, 255, 0.75);
+.nav-logo {
+    position: absolute;
+    left: 3%;
 }
 
 .nav-logo img {
     width: 90px;
 }
 
-.nav-bar .nav-btn {
-    position: relative;
-    margin: 0 auto;
+.nav-btn {
+    position: absolute;
+    top: 1%;
+    right: 3%;
 }
 
-.nav-bar .nav-btn a { 
+.nav-btn a { 
     display: inline-block;
-    position: relative;
-    justify-content: center;
     margin: 20px auto;
     padding: 10px 20px;
     text-decoration: none;
@@ -53,9 +37,61 @@
     color: rgba(255, 255, 255, 0.75);
     background: #ae1f23;
     border-radius: 3px;
+    transition: .5s;
 }
 
-.nav-bar .nav-btn a i {
+.nav-btn a:hover {
+    color: white;
+    transition: .5s;
+}
+
+.nav-btn a i {
     font-size: 25px;
     padding-left: 10px;
+}
+.nav-bar {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-container {
+    position: absolute;
+    left: 10%;
+    margin-right: 40%;
+    /* border: solid blue; */
+}
+
+.nav-links {
+    margin: 0 auto;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.nav-li {
+    padding: 0 15px 0 15px;
+    list-style: none;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.75);
+    transition: .5s;
+}
+
+.nav-bar ul li a:hover {
+    color: white;
+    transition: .5s;
+}
+
+.hero {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.1)), url(images/pizza-bg.jpg);
+    background-position: center;
+    background-size: cover;
 }
