@@ -7,9 +7,12 @@
 
 header {
     position: fixed;
-    /* border: solid yellow; */
+    background: rgba(0,0,0,0.85);
     width: 100%;
-    top: 3%;
+    top: 0%;
+    content: "";
+    height: 90px;
+    z-index: 1000;
 }
 
 .nav-logo {
