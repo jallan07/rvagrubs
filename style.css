@@ -132,7 +132,7 @@ main .container {
     position: relative;
 }
 
-.container .card {
+.card {
     box-shadow:
   0 2.8px 2.2px rgba(0, 0, 0, 0.02),
   0 6.7px 5.3px rgba(0, 0, 0, 0.028),
@@ -142,4 +142,15 @@ main .container {
   0 100px 80px rgba(0, 0, 0, 0.07);
   border: 0px;
   border-radius: 5px;
+  margin: 20px 0;
+}
+
+.card-title {
+    font-weight: 700;
+    transition: all .2s ease; 
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: all .2s ease;
 }
