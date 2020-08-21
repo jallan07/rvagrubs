@@ -88,8 +88,8 @@ nav img {
 .hero-content {
     position: absolute;
     top: 35%;
-    left: 13.5%;
-    max-width: 45%;
+    left: 11.5%;
+    max-width: 60%;
     background: #ae1f249f;
     padding: 20px 45px;
     color: rgba(255, 255, 255, 0.85);
@@ -143,4 +143,14 @@ main h2 {
 .card:hover {
     transform: scale(1.05);
     transition: all .2s ease;
+}
+
+@media only screen and (max-width: 600px) {
+    #navbarNavDropdown {
+        background: rgba(0,0,0,.75);
+        padding: 30px;
+    }
+    nav {
+        margin-top: -9px;
+    }
 }
