@@ -5,91 +5,76 @@
     margin: 0 0;
 }
 
+h1 {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 700;  
+}
+
+
 header {
     position: fixed;
-    background: rgba(0,0,0,0.85);
+    top: 0;
     width: 100%;
-    top: 0%;
-    content: "";
     height: 90px;
     z-index: 1000;
-}
-
-.nav-logo {
-    position: absolute;
-    left: 3%;
-}
-
-.nav-logo img {
-    width: 90px;
-}
-
-.nav-btn {
-    position: absolute;
-    top: 1%;
-    right: 3%;
-}
-
-.nav-btn a { 
-    display: inline-block;
-    margin: 20px auto;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 18px;
-    color: rgba(255, 255, 255, 0.75);
-    background: #ae1f23;
-    border-radius: 3px;
-    transition: .5s;
-}
-
-.nav-btn a:hover {
-    color: white;
-    transition: .5s;
-}
-
-.nav-btn a i {
-    font-size: 25px;
-    padding-left: 10px;
-}
-.nav-bar {
     margin: 0 auto;
-    display: flex;
-    flex-direction: row;
+    background: rgba(0,0,0,.75)
+}
+
+nav {
+    position: relative;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: flex-end;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+nav div {
     justify-content: space-between;
+    align-content: center;
 }
 
-.nav-container {
-    position: absolute;
-    left: 10%;
-    margin-right: 25%;
-    /* border: solid blue; */
+nav img {
+    cursor: pointer;
 }
 
-.nav-links {
+.navbar-brand {
+    color: #fff;
+    font-size: 1.4em;
+}
+
+.navbar-nav {
     margin: 0 auto;
-    margin-top: 5%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+}
+.navbar-nav li {
+    padding: 0 10px;
 }
 
-.nav-li {
-    padding: 0 25px 0 25px;
-    list-style: none;
+.navbar-nav a {
+    color: #fff!important;
 }
 
-.nav-bar ul li a {
-    text-decoration: none;
+.btn {
+    background-color: #ae1f23;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 18px;
-    color: rgba(255, 255, 255, 0.75);
-    transition: .5s;
+    text-transform: uppercase;
+    border: 1px solid #F1CC6A;
+    border-radius: 2px;
+    padding: 10px 30px;
 }
 
-.nav-bar ul li a:hover {
-    color: white;
-    transition: .5s;
+.btn:hover {
+    background-color: #86181b;
 }
 
 .hero {
@@ -112,24 +97,29 @@ header {
 }
 
 .hero-content h1 {
-    font-size: 3.2em;
+    font-size: 4.2vw;
     font-weight: 700;
 }
 
 .hero-content p {
-    font-size: 1.3em;
+    font-size: 20px;
     font-weight: 500;
 }
 
 main {
     width: 100%;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin: 10% 0;
 }
 
 main .container {
     margin: 0 auto;
     position: relative;
+    padding: 35px 0;
+}
+
+main h2 {
+    font-size: 2.5rem;
+    color: rgba(0, 0, 0, 0.75)
 }
 
 .card {
@@ -139,10 +129,9 @@ main .container {
     0 2.4px 32.6px rgba(0, 0, 0, 0.057),
     0 4.2px 58.1px rgba(0, 0, 0, 0.058),
     0 7.9px 108.6px rgba(0, 0, 0, 0.058),
-    0 19px 260px rgba(0, 0, 0, 0.07)
-  ;  
-  border-radius: 15px;
-  margin: 20px 0;
+    0 19px 260px rgba(0, 0, 0, 0.07);  
+  border-radius: 10px;
+  margin: 3% 0;
 }
 
 .card-title {
