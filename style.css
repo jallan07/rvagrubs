@@ -1,156 +1,192 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+html {
+	scroll-behavior: smooth;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 * {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0 0;
+	font-family: "Montserrat", sans-serif;
+	margin: 0 0;
 }
 
 h1 {
-    font-size: 32px;
-    font-weight: 800;
+	font-size: 32px;
+	font-weight: 800;
 }
 
 h2 {
-    font-size: 28px;
-    font-weight: 700;  
+	font-size: 28px;
+	font-weight: 700;
 }
 
-
 header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 90px;
-    z-index: 1000;
-    margin: 0 auto;
-    background: rgba(0,0,0,.75)
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 90px;
+	z-index: 1000;
+	margin: 0 auto;
+	background: rgba(0, 0, 0, 0.75);
 }
 
 nav {
-    position: relative;
-    height: 100%;
-    width: 80%;
-    margin: 0 auto;
-    justify-content: flex-end;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
+	position: relative;
+	height: 100%;
+	width: 80%;
+	margin: 0 auto;
+	justify-content: flex-end;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
 }
 
 nav div {
-    justify-content: space-between;
-    align-content: center;
+	justify-content: space-between;
+	align-content: center;
 }
 
 nav img {
-    cursor: pointer;
+	cursor: pointer;
 }
 
 .navbar-brand {
-    color: #fff;
-    font-size: 1.4em;
+	color: #fff;
+	font-size: 1.4em;
 }
 
 .navbar-nav {
-    margin: 0 auto;
+	margin: 0 auto;
 }
 .navbar-nav li {
-    padding: 0 10px;
+	padding: 0 10px;
 }
 
 .navbar-nav a {
-    color: #fff!important;
+	color: #fff !important;
 }
 
 .btn {
-    background-color: #ae1f23;
-    color: #fff;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    border: 1px solid #F1CC6A;
-    border-radius: 2px;
-    padding: 10px 30px;
+	background-color: #ae1f23;
+	color: #fff;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	border: 1px solid #f1cc6a;
+	border-radius: 2px;
+	padding: 10px 30px;
 }
 
 .btn:hover {
-    background-color: #86181b;
-    border: 1px solid #F1CC6A!important;
+	background-color: #86181b;
+	border: 1px solid #f1cc6a !important;
 }
 
 .hero {
-    height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.1)), url(images/pizza-bg.jpg);
-    background-position: center;
-    background-size: cover;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+		url(images/pizza-bg.jpg);
+	background-position: center;
+	background-size: cover;
 }
 
 .hero-content {
-    position: absolute;
-    top: 35%;
-    left: 11.5%;
-    max-width: 60%;
-    background: #ae1f249f;
-    padding: 20px 45px;
-    color: rgba(255, 255, 255, 0.85);
-    line-height: 1.6;
-    border-radius: 5px;
+	position: absolute;
+	top: 35%;
+	left: 11.5%;
+	max-width: 60%;
+	background: #ae1f249f;
+	padding: 20px 45px;
+	color: rgba(255, 255, 255, 0.85);
+	line-height: 1.6;
+	border-radius: 5px;
 }
 
 .hero-content h1 {
-    font-size: 4.2vw;
-    font-weight: 700;
+	font-size: 4.2vw;
+	font-weight: 700;
 }
 
 .hero-content p {
-    font-size: 20px;
-    font-weight: 500;
+	font-size: 20px;
+	font-weight: 500;
 }
 
 main {
-    width: 100%;
-    margin: 10% 0;
+	width: 100%;
+	margin: 10% 0;
 }
 
 main .container {
-    margin: 0 auto;
-    position: relative;
-    padding: 35px 0;
+	margin: 0 auto;
+	position: relative;
+	padding: 35px 0;
 }
 
 main h2 {
-    font-size: 2.5rem;
-    color: rgba(0, 0, 0, 0.75)
+	font-size: 2.5rem;
+	color: rgba(0, 0, 0, 0.75);
+}
+
+#favContainer {
+	height: 75vh;
 }
 
 .card {
-    box-shadow:
-    0 0.5px 7.2px rgba(0, 0, 0, 0.039),
-    0 1.3px 17.3px rgba(0, 0, 0, 0.053),
-    0 2.4px 32.6px rgba(0, 0, 0, 0.057),
-    0 4.2px 58.1px rgba(0, 0, 0, 0.058),
-    0 7.9px 108.6px rgba(0, 0, 0, 0.058),
-    0 19px 260px rgba(0, 0, 0, 0.07);  
-  border-radius: 10px;
-  margin: 3% 0;
+	box-shadow: 0 0.5px 7.2px rgba(0, 0, 0, 0.039),
+		0 1.3px 17.3px rgba(0, 0, 0, 0.053), 0 2.4px 32.6px rgba(0, 0, 0, 0.057),
+		0 4.2px 58.1px rgba(0, 0, 0, 0.058), 0 7.9px 108.6px rgba(0, 0, 0, 0.058),
+		0 19px 260px rgba(0, 0, 0, 0.07);
+	border-radius: 10px;
+	margin: 3% 0;
 }
 
 .card-title {
-    font-weight: 700;
-    transition: all .2s ease; 
+	font-weight: 700;
+	transition: all 0.2s ease;
 }
 
 .card:hover {
-    transform: scale(1.05);
-    transition: all .2s ease;
+	transform: scale(1.05);
+	transition: all 0.2s ease;
+}
+
+#spinner:not([hidden]) {
+	position: relative;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#spinner::after {
+	content: "";
+	width: 120px;
+	height: 120px;
+	border: 8px solid #f3f3f3;
+	border-top: 8px solid #f25a41;
+	border-radius: 100%;
+	will-change: transform;
+	animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }
 
 @media only screen and (max-width: 600px) {
-    #navbarNavDropdown {
-        background: rgba(0,0,0,.75);
-        padding: 30px;
-    }
-    nav {
-        margin-top: -9px;
-    }
+	#navbarNavDropdown {
+		background: rgba(0, 0, 0, 0.75);
+		padding: 30px;
+	}
+	nav {
+		margin-top: -9px;
+	}
 }
