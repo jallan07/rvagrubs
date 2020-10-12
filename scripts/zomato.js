@@ -31,26 +31,10 @@ $("#food-finder").on("click", function () {
 		console.log(response);
 		// Unhide the featured eats container
 		featuredEats.removeAttr("hidden");
+		// Run the createCards function found on "scripts/cards.js"
 		createCards(response);
 	});
 });
-
-// Create the card elements that will populate the site
-function createCards(response) {
-	for (let i = 0; i < response.restaurants.length; i++) {
-		let place = response.restaurants[i].restaurant;
-		// Get the name of each restaurant
-		let placeName = place.name;
-		console.log(placeName);
-		let cuisines = place.cuisines;
-		console.log(cuisines);
-		let rating = place.user_rating.aggregate_rating;
-		console.log(rating);
-		let reviews = place.user_rating.votes;
-		console.log(reviews);
-	}
-	console.log("this worked!");
-}
 
 // // Get the name of each restaurant
 // response.restaurants.forEach((place) => console.log(place.restaurant.name));
