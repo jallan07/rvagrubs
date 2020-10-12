@@ -14,6 +14,7 @@ const requestObj = {
 		term: "restaurant",
 		attributes: "hot_and_new",
 		location: "Richmond, VA",
+		limit: "20",
 	},
 	headers: { Authorization: apiKey },
 };
